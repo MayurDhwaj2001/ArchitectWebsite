@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Architect </title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./js/loadingscreen.js"></script>
+
+    <link rel="stylesheet" href="./css/loadingscreen.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/rotatingText.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div id="loading-screen">
+        <svg id="animated-svg" viewBox="0 0 900 600" width="500">
+            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M609 378.5c-7.48-1.107-15.001-.404-22.5-.46-16.598-.127-16.555.012-28.514 9.943-8.773 7.286-17.66 14.434-26.969 21.041-2.15 1.526-3.39 3.512-3.093 6.484.346 3.467-1.943 6.852-.035 10.55 1.006 1.947 1.959 3.373 4.092 2.863 1.785-.428 3.252-1.431 3.09-3.926-.21-3.235 1.675-4.908 4.929-4.997 3.565-.098 5.173-2.04 4.984-5.497-.158-2.898.743-4.646 4.017-4.524 3.018.113 4.852-1.511 4.947-4.479.123-3.841 2.11-4.661 5.554-4.548 14.662.48 29.357-.763 44.004.999 4.533.545 6.474-1.716 6.482-6.949.03-19.167.112-38.334-.07-57.5-.038-3.959.475-6.758 5.08-7.02.343-.019.667-.454 1.002-.458 3.022-.032 4.873-1.558 4.934-4.523.056-2.74-1.868-3.716-4.406-4.58-26.046-8.867-52.03-17.916-78.027-26.92-12.004-4.158-24.022-8.273-35.99-12.532-4.167-1.483-7.517 1.078-10.967 2.172a6634 6634 0 0 0-90.53 29.405c-27.402 9.126-54.672 18.647-82.02 27.941-8.133 2.764-16.35 5.28-24.485 8.04-4.856 1.647-4.993 5.627-.51 10.974 25.667-8.334 51.336-16.661 77-25 27.17-8.828 54.32-17.712 81.507-26.48 15.3-4.935 30.686-9.609 45.96-14.624 1.754-.576 2.813-.565 4.567.004a6516 6516 0 0 1 90.033 29.906c3.839 1.307 4.473 3.056 4.43 6.195-.157 11.833-.388 23.666-.455 35.5-.016 2.926-1.357 4.061-4.04 3.99-5.168-.134-10.333-.385-15.501-.469-3.619-.059-3.523-2.46-3.515-5.021.034-11.833-.038-23.667.049-35.5.024-3.375-.813-5.338-4.493-6.617-20.07-6.972-40.676-12.295-60.562-19.826-3.91-1.481-5.974.607-5.975 5.443-.008 26.833-.046 53.667.053 80.5.011 3.133-.363 5.68-3.648 7.037-3.026-1.463-2.999-4.232-2.91-7.037.829-26.33.36-52.667.556-79 .024-3.134-.361-5.68-3.368-6.922-14.493 4.672-28.827 9.338-43.19 13.91-14.818 4.718-29.68 9.295-44.46 14.124-.997.326-1.945.729-3.03.93-3.513.65-5.135 2.507-5.095 6.459.195 19.165.088 38.332.088 57.499 0 7.11.473 7.694 7.5 7.481 35.663-1.081 71.334-.186 107-.474 6.218-.05 6.423.238 6.512 6.493.077 5.363-1.455 10.6-1.07 16.004.175 2.474-1.443 3.833-3.942 3.991-.498.032-1 .003-1.5.005-43.833.167-87.667.34-131.5.492-5.992.021-5.995-.028-6-5.992-.003-5.167.108-10.336-.039-15.499-.094-3.307 1.233-4.707 4.54-4.532 2.534.134 5.079-.671 7.507-.769 4.256-.17 5.01-2.27 5.004-5.7a8940 8940 0 0 1 .015-47c.009-2.582-1.07-4.78-2.079-6.976-.974-2.123-2.07-2.456-5.004-1.758-19.86 4.723-39.132 11.272-58.445 17.732-1 .334-2.01.637-3.366 1.065-.115 15.604-1.6 31.237-1.153 46.938.132 4.662-.308 9.361.102 13.992.53 5.988-2.169 9.622-7.048 12.564-7.453 4.495-15.79 6.053-24.027 5.754-23.171-.843-46.353-1.289-69.5-.599-12.992.387-26.064.871-39.022 2.677-5.092.71-10.317.493-15.498.965-12.292 1.12-24.693 1.068-36.979 2.235-22.81 2.168-45.657 2.045-68.507 1.851-14.42-.122-28.714-2.11-43-3.94-1.065-.137-1.698-1.576-3.001-1M688 267.5c1.333-4.5 2.372-9.114 4.057-13.478 4.597-11.913 2.2-19.673-8.557-26.523-8.7-5.54-18.132-8.604-28.492-7.432-8.455.957-14.928 5.644-18.906 12.988-4.036 7.452-9.677 10.345-18.107 10.164-5.429-.117-11.04.371-16.514 1.703-11 2.677-13.877 12.55-12.024 22.586.766 4.147 2.781 7.44 5.507 10.524 1.902 2.15 2.44 4.475 1.132 7.51-2.767 6.423-.861 12.887 4.404 16.958 4.854 3.753 14.16 3.787 18.982-.023 1.286-1.016 2.453-2.226 3.5-3.492 4.293-5.189 9.93-4.525 15.507-3.43 4.872.957 9.233 3.842 14.516 3.534 2.883-.168 5.708-.805 8.465-1.266 13.031-2.182 19.409 1.282 23.53 13.677 2.964 8.912 6.763 11.405 16.484 12.625 6.361.8 14.144-.23 17.395 7.426 2.068 4.87 3.344 10.12 4.162 15.443 1.278 8.313 1.413 16.695.855 24.999-1.206 17.953-6.215 34.65-18.417 48.488-3.097 3.512-7.207 5.816-10.945 8.565-2.385 1.754-4.712.573-7.031.417-14.495-.976-29.004-.19-43.503-.476-4.335-.085-8.705-.019-12.99-.566-4.92-.629-5.262-1.444-4.972-5.919.087-1.349.793-2.651.935-4.005.896-8.494.87-8.497 9.527-8.497 4.833 0 9.667.03 14.5-.009 4.688-.038 5.963-1.303 5.99-5.991.04-6.666.022-13.333.006-20-.011-5.06-.884-5.976-5.996-5.988-13.667-.034-27.333-.012-41-.012M756 305c2.419.944 4.308 2.415 7.592 1.264 3.367-1.18 7.134-.26 10.54 2.577 4.247 3.535 6.115 8.344 8.804 12.699 4.826 7.817 7.995 6.715 12.894 1.306 9.822-10.843 14.252-24.085 13.093-38.84-.283-3.608-2.243-6.821-5.95-7.916-2.945-.869-2.897-2.751-3.03-5.087-.156-2.771.73-5.408 1.234-7.968 2.099-10.684-.462-20.113-6.16-29.045-5.193-8.138-11.99-14.426-20.494-19.033-6.935-3.757-12.936-1.299-19.052 1.99-1.629.875-2.73 2.281-4.393 3.195-4.837 2.661-5.995 2.765-8.028-2.163-5.295-12.832-16.214-16.733-28.56-17.878-9.318-.864-18.297.351-26.57 5.777-6.42 4.212-10.478 9.847-13.42 16.622M778.5 315c-6.772 3.363-13.888 5.41-21.497 4.945-3.673-.224-6.728.698-9.514 3.042-8.756 7.365-12.772 14.01-9.534 26.025.335 1.243.045 2.655.045 3.988 0 9.667.519 19.37-.15 28.99-.637 9.178-.769 18.437-2.795 27.522-2.309 10.353 1.99 19.237 10.467 21.403 7.012 1.793 14.366 1.671 21.457.892 5.832-.642 11.687-1.285 17.529-1.693 4.504-.315 8.911-1.271 13.493-1.237 7.682.058 15.204.583 22.499 3.123M722 246.5c1.406 2.674 2.707 5.333 4.912 7.586 1.694 1.733 1.945 4.36 2.146 6.91.997 12.697-2.625 24.325-8.119 35.474-2.004 4.067-3.465 8.29-4.924 12.535-2.098 6.103-6.317 8.825-11.99 6.923-6.502-2.18-12.197-5.55-15.095-12.398-1.065-2.518-2.9-4.716-4.435-7.026-4.918-7.402-12.568-6.79-19.449-5.292-10.356 2.256-19.221-.73-28.034-5.235-1.048-.536-2.704-.618-2.512-2.477M725 253.5c0 4.667.094 9.336-.023 14-.156 6.24-1.975 12.201-5.097 17.428-4.218 7.061-10.981 7.983-17.857 3.04-3.883-2.79-6.58-6.699-6.915-11.476-.358-5.112-3.03-7.493-7.608-8.492m66 34c-2.205.899-4.11.479-6.025-.967-2.873-2.17-6.097-3.696-9.443-5.108-7.365-3.11-12.27-.798-14.029 7.076-1.756 7.862.859 15.212 3.134 22.456 1.224 3.9 4.756 4.377 7.823 1.5 3.559-3.337 6.904-6.654 8.256-11.901 1.102-4.275 4.117-8.056 6.284-12.056m-75-79c-2.456 4.36-3.502 9.3-4.302 14.033-1.196 7.074-2.45 14.323.71 21.508 2.441 5.552 4.217 7.484 10.09 7.378 2.268-.04 4.017 1.023 6.002 1.581m74 29c-7.052 1.191-7.384 7.88-9.82 12.593-1.213 2.346 1.464 4.707 3.824 4.783 7.329.235 14.833.882 21.496-3.376 m791.5 308-12 5" />
+        </svg>
+    </div>
+
+
+    <nav class="navbar">
+        <a class="brand" href="#">ARCHI</a>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="nav-wrapper">
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#">About Us</a></li>
+                <li class="menu-item"><a href="#">Services</a></li>
+                <li class="menu-item"><a href="#">Portfolio</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+                <li class="menu-item"><a href="#">Team</a></li>
+                <li class="menu-item"><a href="#">Contact Us</a></li>
+                <li class="menu-item"><a href="#">Careers</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="slider-wrapper">
+        <div class="hero-text">
+            <h1 class="fontbig mb-4"><span class="bold">archi</span> <span class="thin">tects</span></h1>
+            <h2>Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, ipsa.</h2>
+        </div>
+        <img src="./assets/up-broken-line-arrow-svgrep.svg" class="svg1" alt="Arrow Icon">
+
+        <div class="gallery">
+            <img src="./assets/1.PNG" alt="" class="img img-after" />
+            <div class="gallery__resize">
+                <img src="./assets/2.png" alt="" class="img img-before" />
+            </div>
+        </div>
+        <a href="google.com">
+
+            <div class="emblem">Start a Project • Start a Project • </div>
+        </a>
+    </div>
+
+
+    <section class="project-section">
+        <h1 class="fontbig mb-4 center">Projects</h1>
+
+        <div class="project-div">
+
+            <div class="project-image">
+                <img src="./assets/projects/image2BW.png" alt="Project Image" class="projectsIMG" />
+
+            </div>
+            <div class="project-about">
+                <h2 class="mb-2">Lorem, ipsum dolor.</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officiis ratione reprehenderit autem
+                    aliquam animi expedita at nesciunt, distinctio nemo vel temporibus deleniti libero nihil optio
+                    delectus doloremque dolorem maiores!</h3>
+                <br>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa iste alias distinctio in
+                    recusandae ut illo suscipit consequatur exercitationem.</h3>
+            </div>
+        </div>
+        <!-- <div class="project-div">
+
+            <div class="project-about">
+                <h2 class="mb-2">Lorem, ipsum dolor.</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officiis ratione reprehenderit autem
+                    aliquam animi expedita at nesciunt, distinctio nemo vel temporibus deleniti libero nihil optio
+                    delectus doloremque dolorem maiores!</h3>
+                <br>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa iste alias distinctio in
+                    recusandae ut illo suscipit consequatur exercitationem.</h3>
+            </div>
+            <div class="project-image2">
+                <img src="./assets/projects/image1BW.png" alt="Project Image" class="projectsIMG" />
+
+            </div>
+        </div> -->
+        <!-- <div class="project-div">
+            <div class="project-about">About Project 2</div>
+            <div class="project-image">Image 2</div>
+        </div> -->
+    </section>
+
+
+    <section class="services">
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios/50/000000/design.png" alt="UX & UI">
+            <h3>Architecture</h3>
+            <p>Design and planning services.</p>
+        </div>
+
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios/50/000000/smartphone.png" alt="Web & Mobile App">
+            <h3> Interior Design</h3>
+            <p>Space planning and interior design services.</p>
+        </div>
+
+        <div class="service-item">
+            <img src="https://img.icons8.com/ios/50/000000/paint-palette.png" alt="Design & Creative">
+            <h3>Landscape Design</h3>
+            <p>Outdoor space design services.</p>
+        </div>
+
+
+    </section>
+
+
+
+</body>
+<script src="./js/slider.js"></script>
+<script src="./js/navbar.js"></script>
+<script src="./js/rotatingText.js"></script>
+<!-- <script src="https://public.codepenassets.com/js/prefixfree-1.0.7.min.js"></script> -->
+
+
+</html>

@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: #13161ab4;
+  }
+
+  ::selection {
+    color: #fff;
+    background: #13161ab4;
+  }
+}
+
+body {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #252a32;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff !important;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png") !important;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.fontbig {
+  font-size: 4rem;
+}
+
+.bold {
+  font-weight: 900;
+}
+.thin {
+  font-weight: 300;
+}
+
+.mb-1 {
+  margin-bottom: 1vh;
+}
+.mb-2 {
+  margin-bottom: 2vh;
+}
+.mb-3 {
+  margin-bottom: 3vh;
+}
+.mb-4 {
+  margin-bottom: 4vh;
+}
+
+.svg1 {
+  position: absolute;
+  left: 0;
+  right: 80%;
+  top: 75vh;
+  margin: 0 auto;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  z-index: 3;
+}
+.svg1 span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-transform: uppercase;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* broject section begin */
+.project-section {
+  padding: 40px;
+  background-color: #f4f4f400;
+}
+
+.fontbig {
+  font-size: 2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.project-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.project-image,
+.project-about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+}
+
+.project-image {
+  width: 60%;
+}
+.project-image2 {
+  width: 60%;
+}
+
+.project-about {
+  background-color: #ffffff00;
+  width: 100%;
+}
+
+/* Image Styling */
+.projectsIMG {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.project-image::after {
+  content: "";
+  background-image: url("../assets/projects/image2.png"); /* Hover image */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  /* left: 10%; */
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.project-image:hover .projectsIMG {
+  opacity: 0;
+}
+
+.project-image:hover::after {
+  opacity: 1;
+}
+.project-image2::after {
+  content: "";
+  background-image: url("../assets/projects/IMG_6861.JPG"); /* Hover image */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  /* left: 10%; */
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.project-image2:hover .projectsIMG {
+  opacity: 0;
+}
+
+.project-image2:hover::after {
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .project-div {
+    flex-direction: column;
+  }
+
+  .projectsIMG,
+  .project-image::after {
+    width: 100%;
+    left: 0;
+  }
+}
+/* broject section end */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* Servics Section begin */
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.service-item {
+  max-width: 250px;
+  padding: 20px;
+  background: #f3f3f396;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* Servics Section end */

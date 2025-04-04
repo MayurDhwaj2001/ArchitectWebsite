@@ -1,0 +1,155 @@
+.slider-wrapper {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  padding: 0px 5vw;
+}
+.wrapper,
+.gallery,
+.img {
+  max-width: 600px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  position: relative;
+  /* border: 2px solid #000; */
+  margin: 0px auto 90px auto !important;
+}
+.gallery {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+}
+.img {
+  min-width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.gallery__resize,
+.gallery__resize:after {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  height: 100%;
+}
+.gallery__resize {
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.tr {
+  transition: 0.6s;
+}
+.gallery__resize:after {
+  content: "";
+  width: 0px;
+  background-color: #fff;
+  border-left: 0px solid #fff;
+  border-right: 0px solid #fff;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  z-index: 20;
+}
+#before,
+#after {
+  position: absolute;
+  z-index: 100;
+  font-size: 16px;
+  padding: 10px 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-family: "Open Sans", sans-serif;
+  border-radius: 2px;
+}
+#before {
+  left: 0;
+}
+#after {
+  right: 0;
+}
+#left,
+#right,
+#photo-count {
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+}
+#photo-count {
+  font-size: 18px;
+  bottom: -40px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+#photo-name {
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+  #before,
+  #after {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  #photo-count,
+  #photo-name {
+    font-size: 1rem;
+    bottom: -30px;
+  }
+
+  .gallery {
+    width: 400px;
+  }
+  .gallery__resize {
+    width: 50%;
+  }
+  img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  #before,
+  #after {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  #left,
+  #right,
+  #photo-count,
+  #photo-name {
+    font-size: 1rem;
+    bottom: -25px;
+  }
+  #left {
+    left: 300px;
+  }
+
+  .gallery {
+    width: 350px;
+  }
+  .gallery__resize {
+    width: 50%;
+  }
+  img {
+    width: 350px;
+  }
+}
