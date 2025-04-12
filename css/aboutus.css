@@ -1,0 +1,12 @@
+.aboutusimg {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden; /* Optional: hides overflow if image is larger */
+  margin-top: 10vh;
+}
+
+.img-aboutus {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Keeps aspect ratio while covering the area */
+}
