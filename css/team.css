@@ -1,0 +1,94 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.employee,
+.consultant {
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+  background-color: #f8fafc;
+  border-left: 4px solid #1d1d1f;
+  border-radius: 6px;
+}
+
+.employee h3,
+.consultant h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.employee p,
+.consultant p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.accordion {
+  cursor: pointer;
+  background-color: #e2e8f0;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.accordion:hover {
+  background-color: #d1d7df;
+}
+
+.panel {
+  display: none;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #1d1d1f;
+}
+
+.accordion.open + .panel {
+  display: block;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.accordion.open .arrow {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}

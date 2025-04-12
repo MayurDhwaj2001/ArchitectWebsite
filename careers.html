@@ -17,10 +17,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/">
+    <link rel="stylesheet" href="./css/careers.css">
 
 
-    <title>Careers</title>
+    <title>Careers | Architect</title>
 </head>
 
 <body>
@@ -41,12 +41,56 @@
                 <li class="menu-item"><a href="./blogs.html">Blog</a></li>
                 <li class="menu-item"><a href="./team.html">Team</a></li>
                 <li class="menu-item"><a href="./contact.html">Contact Us</a></li>
-                <li class="menu-item"><a href="./careers.html">Careers</a></li>
+                <!-- <li class="menu-item"><a href="./careers.html">Careers</a></li> -->
             </ul>
         </div>
     </nav>
 
+    <div class="careers-container">
+        <!-- Left Column: Job Listings -->
+        <div class="careers-left">
+            <h1 class="fontbig mb-5 center">Job Openings</h1>
 
+            <div class="careers-job">
+                <h2>Architectural Designer</h2>
+                <p>We're looking for a creative architectural designer with 3+ years of experience in residential and
+                    commercial projects. Proficiency in AutoCAD and Revit required.</p>
+            </div>
+            <div class="careers-job">
+                <h2>Project Manager</h2>
+                <p>Join our team as a Project Manager overseeing architecture projects from start to finish. PMP
+                    certification and architecture background preferred.</p>
+            </div>
+
+            <h1 class="fontbig mb-5 center">Benefits </h1>
+            <ul>
+                <li>● Lorem ipsum dolor sit amet.</li>
+                <li>● Lorem ipsum dolor sit amet.</li>
+                <li>● Lorem ipsum dolor sit amet.</li>
+                <li>● Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+
+        <!-- Right Column: Application Form -->
+        <div class="careers-right">
+            <h2>Apply Now</h2>
+            <form id="jobForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="position">Position Applying For</label>
+                <input type="text" id="position" name="position" required />
+
+                <label for="message">Why You?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
 
 
     <!-- footer Begin -->

@@ -17,10 +17,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/">
+    <link rel="stylesheet" href="./css/team.css">
 
 
-    <title>Team</title>
+    <title>Team | Architect</title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                 <li class="menu-item"><a href="./services.html">Services</a></li>
                 <li class="menu-item"><a href="./portfolio.html">Portfolio</a></li>
                 <li class="menu-item"><a href="./blogs.html">Blog</a></li>
-                <li class="menu-item"><a href="./team.html">Team</a></li>
+                <!-- <li class="menu-item"><a href="./team.html">Team</a></li> -->
                 <li class="menu-item"><a href="./contact.html">Contact Us</a></li>
                 <li class="menu-item"><a href="./careers.html">Careers</a></li>
             </ul>
@@ -48,6 +48,87 @@
 
 
 
+
+    <div class="container">
+        <h1>Meet Our Team</h1>
+
+        <!-- Employee List -->
+        <div class="section">
+            <h2>Core Team</h2>
+
+            <div class="employee">
+                <h3>Jane Doe</h3>
+                <p>Principal Architect - Urban design, sustainable development, BIM</p>
+            </div>
+
+            <div class="employee">
+                <h3>John Smith</h3>
+                <p>Senior Interior Designer - Workspace planning, lighting, material design</p>
+            </div>
+
+            <div class="employee">
+                <h3>Emily Zhang</h3>
+                <p>Landscape Architect - Ecological design, green roofs, water-sensitive planning</p>
+            </div>
+        </div>
+
+        <!-- Sub-Consultants -->
+        <div class="section">
+            <h2>Sub-Consultants</h2>
+
+            <!-- Structure -->
+            <div class="accordion">Structure <span class="arrow">▶</span></div>
+            <div class="panel">
+                <div class="consultant">
+                    <h3>BuildStrong Consultants</h3>
+                    <p>Structural engineering for high-rise and industrial buildings</p>
+                </div>
+                <div class="consultant">
+                    <h3>SteelFrame Associates</h3>
+                    <p>Steel and concrete structure specialists</p>
+                </div>
+            </div>
+
+            <!-- MEP -->
+            <div class="accordion">MEP (Mechanical, Electrical, Plumbing) <span class="arrow">▶</span></div>
+            <div class="panel">
+                <div class="consultant">
+                    <h3>CoreFlow Engineers</h3>
+                    <p>Integrated MEP solutions for residential and commercial projects</p>
+                </div>
+                <div class="consultant">
+                    <h3>MEP Dynamics</h3>
+                    <p>Green MEP systems with energy-efficient design</p>
+                </div>
+            </div>
+
+            <!-- HVAC -->
+            <div class="accordion">HVAC (Heating, Ventilation, Air Conditioning) <span class="arrow">▶</span></div>
+            <div class="panel">
+                <div class="consultant">
+                    <h3>CoolAir Solutions</h3>
+                    <p>HVAC systems for all climate zones and LEED certification support</p>
+                </div>
+                <div class="consultant">
+                    <h3>VentTech</h3>
+                    <p>Smart HVAC design for large-scale commercial buildings</p>
+                </div>
+            </div>
+
+            <!-- Fire Fighting -->
+            <div class="accordion">Fire Fighting <span class="arrow">▶</span></div>
+            <div class="panel">
+                <div class="consultant">
+                    <h3>SafeGuard Systems</h3>
+                    <p>Fire protection engineering and suppression system design</p>
+                </div>
+                <div class="consultant">
+                    <h3>FireSec Engineers</h3>
+                    <p>Code-compliant fire fighting system planning and audits</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer Begin -->
     <footer class="footer">
@@ -87,7 +168,20 @@
     <!-- footer end -->
 
 </body>
-<script src="./js/navbar.js"></script>
+<script>
+    const accordions = document.querySelectorAll('.accordion');
+    accordions.forEach(acc => {
+        acc.addEventListener('click', () => {
+            // Close other accordions
+            accordions.forEach(el => {
+                if (el !== acc) el.classList.remove('open');
+            });
 
+            acc.classList.toggle('open');
+        });
+    });
+</script>
+
+<script src="./js/navbar.js"></script>
 
 </html>

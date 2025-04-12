@@ -17,10 +17,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/">
+    <link rel="stylesheet" href="./css/services.css">
 
 
-    <title>Services</title>
+    <title>Services | Architect</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
             <ul class="menu">
                 <li class="menu-item"><a href="./index.html">Home</a></li>
                 <li class="menu-item"><a href="./aboutus.html">About Us</a></li>
-                <li class="menu-item"><a href="./services.html">Services</a></li>
+                <!-- <li class="menu-item"><a href="./services.html">Services</a></li> -->
                 <li class="menu-item"><a href="./portfolio.html">Portfolio</a></li>
                 <li class="menu-item"><a href="./blogs.html">Blog</a></li>
                 <li class="menu-item"><a href="./team.html">Team</a></li>
@@ -45,6 +45,49 @@
             </ul>
         </div>
     </nav>
+
+
+    <h1 class="fontsuper mt-n  center">Our Services</h1>
+
+
+    <div class="container">
+
+        <div class="service" onclick="toggleService(this)">
+            <h2>
+                Architecture
+                <span class="toggle-icon">▼</span>
+            </h2>
+            <div class="desc">
+                We provide full-scale architectural design and planning services including conceptual designs, 3D
+                modeling, technical drawings, and building permit approvals. Our team turns vision into viable,
+                functional structures.
+            </div>
+        </div>
+
+        <div class="service" onclick="toggleService(this)">
+            <h2>
+                Interior Design
+                <span class="toggle-icon">▼</span>
+            </h2>
+            <div class="desc">
+                Our interior design services focus on space planning, aesthetics, lighting, furniture selection, and
+                material finishes to enhance the interior environments of residential, commercial, and hospitality
+                spaces.
+            </div>
+        </div>
+
+        <div class="service" onclick="toggleService(this)">
+            <h2>
+                Landscape Design
+                <span class="toggle-icon">▼</span>
+            </h2>
+            <div class="desc">
+                We design outdoor spaces with sustainability and beauty in mind. From gardens and patios to commercial
+                plazas, we integrate nature with human needs through creative, functional landscaping solutions.
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -87,6 +130,15 @@
     <!-- footer end -->
 
 </body>
+<script>
+    function toggleService(serviceElement) {
+        const isActive = serviceElement.classList.contains("active");
+        document.querySelectorAll(".service").forEach(el => el.classList.remove("active"));
+        if (!isActive) {
+            serviceElement.classList.add("active");
+        }
+    }
+</script>
 <script src="./js/navbar.js"></script>
 
 

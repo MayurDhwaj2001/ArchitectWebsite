@@ -17,10 +17,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/">
+    <link rel="stylesheet" href="./css/blog.css">
 
 
-    <title>Blogs</title>
+    <title>Blogs | Architect</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 <li class="menu-item"><a href="./aboutus.html">About Us</a></li>
                 <li class="menu-item"><a href="./services.html">Services</a></li>
                 <li class="menu-item"><a href="./portfolio.html">Portfolio</a></li>
-                <li class="menu-item"><a href="./blogs.html">Blog</a></li>
+                <!-- <li class="menu-item"><a href="./blogs.html">Blog</a></li> -->
                 <li class="menu-item"><a href="./team.html">Team</a></li>
                 <li class="menu-item"><a href="./contact.html">Contact Us</a></li>
                 <li class="menu-item"><a href="./careers.html">Careers</a></li>
@@ -46,10 +46,87 @@
         </div>
     </nav>
 
+    <div class="container">
+        <h1 class="fontsuper mt-n  center">Blog/News</h1>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <div class="tab active" data-target="industry">Industry Insights</div>
+            <div class="tab" data-target="design">Design Trends</div>
+            <div class="tab" data-target="news">Company News</div>
+            <div class="tab" data-target="events">Event Updates</div>
+            <div class="tab" data-target="case">Case Studies</div>
+        </div>
+
+        <!-- Content Panels -->
+        <div class="posts active" id="industry">
+            <div class="post-card">
+                <div class="post-title">Smart Cities: The Future of Urban Architecture</div>
+                <div class="post-desc">Exploring the impact of technology and data on city planning and design.</div>
+                <div class="post-date">March 20, 2025</div>
+            </div>
+            <div class="post-card">
+                <div class="post-title">Sustainable Building Codes Around the World</div>
+                <div class="post-desc">How global regulations are shaping the construction industry.</div>
+                <div class="post-date">February 5, 2025</div>
+            </div>
+        </div>
+
+        <div class="posts" id="design">
+            <div class="post-card">
+                <div class="post-title">Minimalism Meets Nature: The 2025 Interior Trend</div>
+                <div class="post-desc">Designers are embracing natural tones and raw materials this year.</div>
+                <div class="post-date">January 18, 2025</div>
+            </div>
+            <div class="post-card">
+                <div class="post-title">Biophilic Design: Bringing Outdoors In</div>
+                <div class="post-desc">How indoor spaces are being transformed with plants and natural textures.</div>
+                <div class="post-date">December 10, 2024</div>
+            </div>
+        </div>
+
+        <div class="posts" id="news">
+            <div class="post-card">
+                <div class="post-title">ARCHItects Wins National Design Excellence Award</div>
+                <div class="post-desc">Our sustainable housing project receives top honors from the AIA.</div>
+                <div class="post-date">April 2, 2025</div>
+            </div>
+            <div class="post-card">
+                <div class="post-title">We've Opened a New Studio in Dubai</div>
+                <div class="post-desc">Expanding our global presence with a new architectural hub in the UAE.</div>
+                <div class="post-date">March 15, 2025</div>
+            </div>
+        </div>
+
+        <div class="posts" id="events">
+            <div class="post-card">
+                <div class="post-title">Join Us at Design World Expo 2025</div>
+                <div class="post-desc">We're speaking on smart city innovation and exhibit our new VR tools.</div>
+                <div class="post-date">April 30, 2025</div>
+            </div>
+            <div class="post-card">
+                <div class="post-title">Free Webinar: Future-Proofing Your Architecture</div>
+                <div class="post-desc">Our lead architect shares strategies for resilient and adaptive design.</div>
+                <div class="post-date">May 12, 2025</div>
+            </div>
+        </div>
+
+        <div class="posts" id="case">
+            <div class="post-card">
+                <div class="post-title">Urban Renewal in New Delhi: A Success Story</div>
+                <div class="post-desc">How ARCHItects revitalized a heritage district with smart planning.</div>
+                <div class="post-date">March 1, 2025</div>
+            </div>
+            <div class="post-card">
+                <div class="post-title">Reimagining Workspaces Post-Pandemic</div>
+                <div class="post-desc">A case study on how our flexible office design improved productivity.</div>
+                <div class="post-date">February 20, 2025</div>
+            </div>
+        </div>
+
+    </div>
 
 
-
-    <!-- footer Begin -->
     <footer class="footer">
         <div class="footer-content">
             <aside class="footer-brand">
@@ -85,8 +162,27 @@
         </div>
     </footer>
     <!-- footer end -->
-
 </body>
+<script>
+    const tabs = document.querySelectorAll(".tab");
+    const posts = document.querySelectorAll(".posts");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            const target = tab.getAttribute("data-target");
+            posts.forEach(p => {
+                if (p.id === target) {
+                    p.classList.add("active");
+                } else {
+                    p.classList.remove("active");
+                }
+            });
+        });
+    });
+</script>
 <script src="./js/navbar.js"></script>
 
 

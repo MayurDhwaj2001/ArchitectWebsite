@@ -1,0 +1,91 @@
+.careers-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.careers-left {
+  width: 70vw;
+  padding: 2rem;
+  padding-left: 5vw;
+  overflow-y: auto;
+  margin-top: 12vh;
+}
+
+.careers-right {
+  width: 30vw;
+  padding: 2rem;
+  margin-top: 15vh;
+  position: sticky;
+  /* top: 12vh; */
+  align-self: flex-start;
+  background: #f5f5f5;
+  /* border-left: 1px solid #ccc; */
+  height: 100%;
+}
+
+.careers-job {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.careers-job h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.careers-job p {
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .careers-container {
+    flex-direction: column;
+  }
+
+  .careers-left,
+  .careers-right {
+    width: 100%;
+    position: static;
+    border-left: none;
+  }
+
+  .careers-right {
+    background-color: #fafafa;
+    border-top: 1px solid #ccc;
+    height: fit-content;
+  }
+}
